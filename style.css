@@ -301,10 +301,9 @@ a {
 footer {
   background-color: #f1f1f1;
   opacity: 85%;
-  height: 50px;
-  width: 90%;
-  padding-top: 30px;
-  padding-left: 20px;
+  height: 40px;
+  width: 85%;
+  padding: 10px 20px 30px;
   margin: auto;
   font-family: sans-serif;
   text-decoration: none;
