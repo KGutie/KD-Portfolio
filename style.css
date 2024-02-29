@@ -1,0 +1,312 @@
+.page-wrapper {
+  background-image: url(https://images.pexels.com/photos/4321194/pexels-photo-4321194.jpeg);
+  background-color: white;
+  height: auto;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 30px;
+}
+
+.header {
+  text-align: center;
+  padding: 0 0 10px 0;
+  width: 250px;
+  height: 150px;
+  margin: 0 auto 20px auto;
+  background: white;
+  border-radius: 20px;
+  border: 5px solid #fa8072;
+}
+
+@media (max-width: 460px) {
+  .header {
+    animation-duration: 0s;
+    margin-bottom: 30px;
+  }
+}
+
+.title {
+  margin: 100px auto 0px auto;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  height: 60px;
+  padding: 10px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.navbar a:hover {
+  background-color: #fff1f1;
+  height: 50px;
+  padding-bottom: 50px;
+  margin-top: 0px;
+  width: 55px;
+  color: black;
+  border-radius: 15px;
+  border: 5px solid #fa8072;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.welcome-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  height: auto;
+  font-family: sans-serif;
+  animation-name: grow;
+  animation-delay: 5s;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes grow {
+  30% {
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-section {
+    animation-duration: 2s;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 350px) {
+  @keyframes grow {
+    20% {
+      transform: scale(20%);
+    }
+  }
+}
+
+.profile-photo {
+  border-radius: 15px;
+  border: 5px solid #fa8072;
+  margin: 10px 0px 10px 10px;
+  z-index: 1;
+}
+
+.profile-text {
+  display: flexbox;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: white;
+  font-family: monospace, "Lucida Console", "Courier New";
+  text-align: left;
+  padding: 20px 20px 40px 20px;
+  margin: 20px;
+  height: 50%;
+  width: 250px;
+  border-radius: 15px;
+  border: 5px solid #fa8072;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+@media (max-width: 480px) {
+  .profile-text {
+    padding: 20px 20px;
+    margin: 10px auto;
+    width: 75%;
+  }
+}
+
+.social-icons {
+  border-radius: 150px;
+  border: 3px solid white;
+  padding: 0px auto 20px;
+}
+
+@media (max-width: 460px) {
+  .social-icons {
+    margin: 10px 5px;
+    float: right;
+  }
+}
+
+.grid-background {
+  background-color: #ffefd5;
+  padding: 50px 0;
+  margin: 10px auto;
+  width: 85%;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 10px;
+  animation-name: grow;
+  animation-delay: 9s;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+
+@media (max-width: 400px) {
+  .grid-background {
+    animation-duration: 0s;
+    width: 350px;
+  }
+}
+
+h2 {
+  margin: 10px 20px;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: monospace, "Lucida Console", "Courier New";
+  width: auto;
+  background: white;
+  border: 5px solid #fa8072;
+}
+
+h5 {
+  margin: 10px 20px;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: monospace, "Lucida Console", "Courier New";
+  width: auto;
+}
+
+.grid-container-1 {
+  display: inline-grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-row-gap: 150px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 10px auto;
+  margin-bottom: 6rem;
+}
+
+.project-tile {
+  margin: auto;
+}
+
+.project-img {
+  margin: auto;
+  border-radius: 10px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 10px;
+  height: 300px;
+  width: 300px;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #fa8072;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+  height: 300px;
+  width: 300px;
+  font-family: sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.flip-card-back h1 {
+  padding-top: 75px;
+}
+
+.project-link {
+  text-decoration: none;
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  border: solid black;
+  margin-top: 30px;
+  color: black;
+}
+
+.project-link:hover {
+  background: #b0e0e6;
+  padding: 20px;
+  border-radius: 40px;
+  font-weight: bold;
+  border: 5px solid black;
+}
+
+.profile-link:hover {
+  color: #fa8072;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  background-color: #f1f1f1;
+  opacity: 85%;
+  height: 50px;
+  width: 90%;
+  padding-top: 30px;
+  padding-left: 20px;
+  margin: auto;
+  font-family: sans-serif;
+  text-decoration: none;
+  border-radius: 10px;
+}
