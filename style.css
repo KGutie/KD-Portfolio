@@ -1,6 +1,6 @@
 .page-wrapper {
   background-image: url(https://images.pexels.com/photos/4321194/pexels-photo-4321194.jpeg);
-  background-color: white;
+  background-color: #fff1f1;
   height: auto;
   width: 100%;
   background-position: center;
@@ -117,7 +117,7 @@ li {
   display: flexbox;
   flex-direction: column;
   justify-content: space-evenly;
-  background: white;
+  background: #fff1f1;
   font-family: monospace, "Lucida Console", "Courier New";
   text-align: left;
   padding: 20px 20px 40px 20px;
