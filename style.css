@@ -15,7 +15,7 @@
   width: 250px;
   height: 150px;
   margin: 0 auto 20px auto;
-  background: white;
+  background:  #fff1f1;
   border-radius: 20px;
   border: 5px solid #fa8072;
 }
@@ -118,7 +118,7 @@ li {
   flex-direction: column;
   justify-content: space-evenly;
   background: #fff1f1;
-  font-family: monospace, "Lucida Console", "Courier New";
+  font-family: "Lucida Console", "Courier New", monospace;
   text-align: left;
   padding: 20px 20px 40px 20px;
   margin: 20px;
@@ -140,7 +140,7 @@ li {
 
 .social-icons {
   border-radius: 150px;
-  border: 3px solid white;
+  border: 3px solid  #fff1f1;
   padding: 0px auto 20px;
 }
 
@@ -177,9 +177,9 @@ h2 {
   margin: 10px 20px;
   padding: 10px;
   border-radius: 10px;
-  font-family: monospace, "Lucida Console", "Courier New";
+  font-family: "Lucida Console", "Courier New", monospace;
   width: auto;
-  background: white;
+  background:  #fff1f1;
   border: 5px solid #fa8072;
 }
 
@@ -187,7 +187,7 @@ h5 {
   margin: 10px 20px;
   padding: 10px;
   border-radius: 10px;
-  font-family: monospace, "Lucida Console", "Courier New";
+  font-family: "Lucida Console", "Courier New", monospace;
   width: auto;
 }
 
@@ -257,7 +257,7 @@ h5 {
 /* Style the back side */
 .flip-card-back {
   background-color: #fa8072;
-  color: white;
+  color:  #fff1f1;
   transform: rotateY(180deg);
   border-radius: 10px;
   height: 300px;
@@ -273,7 +273,7 @@ h5 {
 
 .project-link {
   text-decoration: none;
-  background-color: white;
+  background-color:  #fff1f1;
   padding: 10px;
   border-radius: 20px;
   border: solid black;
